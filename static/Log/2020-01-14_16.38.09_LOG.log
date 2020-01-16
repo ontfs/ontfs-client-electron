@@ -1,0 +1,4 @@
+2020/01/14 16:38:09.607387 [0;36m[INFO ][m GID 1, SetOntFsSdkDaemonConfig success
+2020/01/14 16:38:09.612840 [0;36m[INFO ][m GID 1, Rpc init success
+2020/01/14 16:38:09.612882 [0;36m[INFO ][m GID 1, InitRpcServer success
+2020/01/14 16:38:33.830676 [0;36m[INFO ][m GID 38, received exit signal:interrupt

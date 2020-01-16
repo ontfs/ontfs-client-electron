@@ -1,0 +1,16 @@
+2020/01/14 20:16:29.160063 [0;36m[INFO ][m GID 1, SetOntFsSdkDaemonConfig success
+2020/01/14 20:16:29.165787 [0;36m[INFO ][m GID 1, Rpc init success
+2020/01/14 20:16:29.165839 [0;36m[INFO ][m GID 1, InitRpcServer success
+2020/01/14 20:16:58.770776 [0;31m[ERROR][m GID 37, HTTP JSON RPC Handle - method not found: 
+2020/01/14 20:20:20.118997 [0;36m[INFO ][m GID 37, cfg: &{1 false 21336 ./Sdk/DB ./Sdk/OntFs ./Sdk/Download 0}
+2020/01/14 20:20:20.120804 [0;32m[DEBUG][m GID 37, github.com/ontio/ont-fs/api.NewOntFSService service.go:109 ontfs service created successfully
+2020/01/14 20:20:20.125773 [0;36m[INFO ][m GID 22, [P2PActor] actor started
+2020/01/14 20:20:20.126257 [0;32m[DEBUG][m GID 37, github.com/ontio/ont-fs-sdk.accountReader.Read sdk.go:167 bufs :2dfe9fa6c3025669e5c818d51b9872f5f831125ec7480ab5024e3952cce7bf5a
+2020/01/14 20:20:20.129474 [0;32m[DEBUG][m GID 37, github.com/ontio/ont-fs/network/p2p/network.(*Network).Start network.go:104 Network protocol tcp
+2020/01/14 20:20:20.132558 [0;32m[DEBUG][m GID 37, github.com/ontio/carrier/network.(*Builder).SetKeys builder.go:160 Network use account key
+2020/01/14 20:20:20.133018 [0;32m[DEBUG][m GID 37, github.com/ontio/ont-fs/network/p2p/network.(*Network).Start network.go:143 keepalive interval: 3000000000, timeout: 15000000000
+2020/01/14 20:20:20.136031 [0;36m[INFO ][m GID 37, carrier version: 
+2020/01/14 20:20:20.140102 [0;36m[INFO ][m GID 26, set non-block success when listen, value is true
+2020/01/14 20:20:20.173509 [0;32m[DEBUG][m GID 37, github.com/ontio/ont-fs/api.(*OntFSService).Start service.go:171 load pinner error : cannot load pin state: key not found, create new one
+2020/01/14 20:20:20.175650 [0;32m[DEBUG][m GID 37, github.com/ontio/ont-fs/api.(*OntFSService).Start service.go:211 ontfs service started successfully
+2020/01/14 20:20:23.145975 [0;36m[INFO ][m GID 28, proxyModeEnable is false, proxyKeepaliveService groutine exit now

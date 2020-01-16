@@ -1,0 +1,18 @@
+{
+  "Datastore": {
+    "StorageMax": "10GB",
+    "StorageGCWatermark": 90,
+    "GCPeriod": "1h",
+    "Spec": {
+      "mounts": [
+        {
+          "compression": "none",
+          "mountpoint": "/",
+          "path": "datastore",
+          "type": "levelds"
+        }
+      ],
+      "type": "mount"
+    }
+  }
+}

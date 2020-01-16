@@ -1,0 +1,8 @@
+{
+	"DBPath": "./Sdk/DB",
+	"FsRepoRoot": "./Sdk/OntFs",
+	"FsFileRoot": "./Sdk/Download",
+	"RpcPort": 21336,
+	"LogLevel": 1,
+	"DisableStdLog": false
+}
