@@ -1,6 +1,6 @@
 import request from './request'
 
-export function StartSDK(data) {
+export function CommonFn(data) {
   return request({
     method: 'post',
     data

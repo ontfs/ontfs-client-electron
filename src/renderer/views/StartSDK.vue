@@ -1,6 +1,6 @@
 <template>
   <div class="startsdk_wrap">
-    <!-- <el-button @click="send" type="success">Click</el-button> -->
+    <el-button @click="toHome" type="success">Click</el-button>
     <div class="form_area">
       <el-form
         :model="ruleForm"
@@ -83,6 +83,9 @@ export default {
     }
   },
   methods: {
+    toHome() {
+      this.$router.push({ name: 'Upload' })
+    },
     submitForm(formName) {
       this.$refs[formName].validate(valid => {
         if (valid) {
@@ -114,7 +117,7 @@ export default {
         id: '1'
       }
       console.log(p)
-      let res = await this.$http.default.Role.StartSDK(p)
+      let res = await this.$http.default.Role.CommonFn(p)
       console.log(res)
       const { desc, error } = res
       if (desc === 'SUCCESS' && error === 0) {
