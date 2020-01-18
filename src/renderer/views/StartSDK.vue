@@ -125,6 +125,7 @@ export default {
           type: 'success',
           message: 'Start success!'
         })
+        return this.$router.push({ name: 'Upload' })
       } else {
         this.$message({
           type: 'error',

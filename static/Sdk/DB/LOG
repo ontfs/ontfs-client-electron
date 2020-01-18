@@ -58,3 +58,23 @@
 18:37:33.998602 version@stat F·[] S·0B[] Sc·[]
 18:37:34.022214 db@janitor F·2 G·0
 18:37:34.022308 db@open done T·27.467574ms
+=============== Jan 18, 2020 (CST) ===============
+12:22:13.317307 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+12:22:13.319479 version@stat F·[] S·0B[] Sc·[]
+12:22:13.319557 db@open opening
+12:22:13.319671 journal@recovery F·1
+12:22:13.320999 journal@recovery recovering @12
+12:22:13.341146 memdb@flush created L0@14 N·16 S·2KiB "[ds..KRn,v14":"dsp.._v1,v4"
+12:22:13.348253 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+12:22:13.384902 db@janitor F·3 G·0
+12:22:13.385016 db@open done T·65.416454ms
+=============== Jan 18, 2020 (CST) ===============
+14:20:46.074930 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+14:20:46.076678 version@stat F·[1] S·2KiB[2KiB] Sc·[0.25]
+14:20:46.076738 db@open opening
+14:20:46.076857 journal@recovery F·1
+14:20:46.077260 journal@recovery recovering @15
+14:20:46.084954 memdb@flush created L0@17 N·134 S·15KiB "[ds..uAY,v106":"dsp.._v1,v21"
+14:20:46.087809 version@stat F·[2] S·17KiB[17KiB] Sc·[0.50]
+14:20:46.113996 db@janitor F·4 G·0
+14:20:46.114106 db@open done T·37.34136ms

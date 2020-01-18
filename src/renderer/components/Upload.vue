@@ -43,7 +43,7 @@
           :picker-options="pickerOptions"
         ></el-date-picker>
       </el-form-item>
-      <el-form-item label="Description">
+      <el-form-item label="Description" prop="FileDesc">
         <el-input type="textarea" v-model="ruleForm.FileDesc"></el-input>
       </el-form-item>
       <el-form-item>
@@ -98,6 +98,13 @@ export default {
             message: 'Please select file expiration time',
             trigger: 'change'
           }
+        ],
+        FileDesc: [
+          {
+            required: true,
+            message: 'Please enter file description',
+            trigger: 'blur'
+          }
         ]
       }
     }
@@ -113,7 +120,6 @@ export default {
             })
           }
           console.log(this.DataParams)
-          //   alert('submit!')
           this.uploadFn()
         } else {
           console.log('error submit!!')
@@ -139,8 +145,28 @@ export default {
       this.$refs.file_upload.click()
     },
     async uploadFn() {
+      const loading = this.$loading({
+        lock: true,
+        text: 'Loading',
+        spinner: 'el-icon-loading',
+        background: 'rgba(0, 0, 0, 0.2)'
+      })
       let apires = await this.$http.default.Role.CommonFn(this.DataParams)
       console.log('apires', apires)
+      const { desc, error, result } = apires
+      loading.close()
+      if (desc !== 'SUCCESS' || error !== 0) {
+        return this.$message({
+          type: 'error',
+          message: desc
+        })
+      }
+      this.resetForm('ruleForm')
+      this.fileName = ''
+      return this.$message({
+        type: 'success',
+        message: 'file upload success!'
+      })
     }
   },
   mounted() {

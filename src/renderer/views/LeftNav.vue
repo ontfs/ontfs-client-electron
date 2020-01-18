@@ -30,6 +30,7 @@
   .left,
   .right {
     height: 100%;
+    overflow: auto;
   }
   .left {
     background: #1787eb;
