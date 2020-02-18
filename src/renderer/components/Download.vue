@@ -60,7 +60,7 @@ export default {
               FileHash: 'Sk9yZQaUN4xTP8WtyDoy9vSwE9uaUw3BtLMaMcRyGrbaHNqA',
               InOrder: true,
               MaxPeerCnt: 3,
-              OutFilePath: '',
+              OutFilePath: '/Users/ericyang/Desktop/client_moc/a',
               DecryptPwd: '111111'
             }
           ],
